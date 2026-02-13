@@ -1,8 +1,8 @@
 import { createRoute } from '@tanstack/react-router';
 
-import { rootRoute } from '@/shared/lib/root-route';
+import { AccountPage } from '@/pages/account-page';
 
-import { AccountPage } from '../ui';
+import { rootRoute } from '../root-route.tsx';
 
 export const AccountPageRoute = createRoute({
   getParentRoute: () => rootRoute,

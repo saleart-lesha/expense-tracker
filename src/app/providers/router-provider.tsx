@@ -1,12 +1,9 @@
 import { createRouter, RouterProvider } from '@tanstack/react-router';
 
-import { AccountPageRoute } from '@/pages/account-page/route';
-import { rootRoute } from '@/shared/lib/root-route';
-
-const routeTree = rootRoute.addChildren([AccountPageRoute]);
+import { routeTree } from '../router/router';
 
 const router = createRouter({ routeTree, basepath: '/expense-tracker' });
 
-export function AppRouter() {
+export const AppRouter = () => {
   return <RouterProvider router={router} />;
-}
+};
