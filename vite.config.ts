@@ -10,6 +10,12 @@ import { defineConfig } from 'vitest/config';
 export default defineConfig({
   base: '/expense-tracker/',
 
+  css: {
+    modules: {
+      localsConvention: 'camelCase',
+    },
+  },
+
   plugins: [
     react(),
     tailwindcss(),

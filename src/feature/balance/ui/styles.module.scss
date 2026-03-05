@@ -1,0 +1,19 @@
+.balance {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  width: fit-content;
+
+  &__sum {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1c1c1e;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 12px;
+    color: #8e8e93;
+  }
+}
