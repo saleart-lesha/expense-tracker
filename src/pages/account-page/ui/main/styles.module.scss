@@ -1,0 +1,14 @@
+.account-page {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_button {
+      cursor: pointer;
+      padding: 4px;
+      width: 28px;
+      height: 28px;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.debts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+
+  &__title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #8e8e93;
+    margin: 0;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &_value {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 22px;
+      color: #1c1c1e;
+
+      &_negative {
+        color: #e53935;
+      }
+    }
+
+    &_label {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 18px;
+      color: #8e8e93;
+    }
+  }
+}
